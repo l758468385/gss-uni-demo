@@ -60,7 +60,7 @@
 						title: '登录成功',
 						icon: 'success'
 					});
-					
+					this.$analytics.setUserId(this.username);
 					// 跳转到首页
 					setTimeout(() => {
 						uni.switchTab({
@@ -110,12 +110,11 @@
 			}
 			
 			input {
-				width: 100%;
 				height: 90rpx;
 				background-color: #f8f8f8;
 				border-radius: 45rpx;
-				padding: 0 30rpx;
 				font-size: 28rpx;
+				padding: 0 30rpx;
 			}
 		}
 		
